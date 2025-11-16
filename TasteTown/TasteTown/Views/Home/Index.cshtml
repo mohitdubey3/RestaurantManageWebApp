@@ -1,0 +1,157 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container my-5">
+
+    <!-- Hero -->
+    <section class="py-5 text-center bg-light rounded-3 mb-5">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Welcome to Taste Town</h1>
+            <p class="lead text-muted">Fresh, delicious meals served with love. Cozy ambience. Book a table or explore our menu.</p>
+            <div class="d-flex justify-content-center gap-2 mt-4">
+                <a class="btn btn-outline-dark" asp-area="" asp-controller="Home" asp-action="Contact">Book a Table</a>
+                <a class="btn btn-outline-dark" asp-area="" asp-controller="Product" asp-action="Index">See Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="py-4">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <i class="bi bi-basket2-fill fs-1 text-dark"></i>
+                <h4 class="mt-2">Fresh Ingredients</h4>
+                <p class="text-muted">Locally sourced and seasonally inspired.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="bi bi-clock-fill fs-1 text-dark"></i>
+                <h4 class="mt-2">Fast Service</h4>
+                <p class="text-muted">Prompt, friendly, and attentive staff.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="bi bi-star-fill fs-1 text-dark"></i>
+                <h4 class="mt-2">Top Rated</h4>
+                <p class="text-muted">Loved by our customers for taste and service.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu samples -->
+    <section class="py-5">
+        <h2 class="mb-4 text-center">Our Menu</h2>
+        <div class="row g-4 m-auto">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="~/images/menu/menu-item-1.png" class="card-img-top" alt="Menu item 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Tofu stir-fry</h5>
+                        <p class="card-text text-muted">tofu stir-fry with penuts and vegetables.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">230 ₹</span>
+                        <a class="btn btn-sm btn-outline-dark" asp-area="" asp-controller="Order" asp-action="Create">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="~/images/menu/menu-item-2.png" class="card-img-top" alt="Menu item 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Goi Cuon</h5>
+                        <p class="card-text text-muted">Populer part of traditional vietnames cuisine.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">160 ₹</span>
+                        <a class="btn btn-sm btn-outline-dark" asp-area="" asp-controller="Order" asp-action="Create">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="~/images/menu/menu-item-3.png" class="card-img-top" alt="Menu item 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Green papaya salad</h5>
+                        <p class="card-text text-muted">Popular, spicy salad made from shredded unripe papaya.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">270 ₹</span>
+                        <a class="btn btn-sm btn-outline-dark" asp-area="" asp-controller="Order" asp-action="Create">Order</a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row g-4 m-auto">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="~/images/menu/menu-item-4.png" class="card-img-top" alt="Menu item 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Chiken and Peach Salad</h5>
+                        <p class="card-text text-muted">A vibrant, fresh salad, consistentent with descriptions of a peach salad</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">170 ₹</span>
+                        <a class="btn btn-sm btn-outline-dark" asp-area="" asp-controller="Order" asp-action="Create">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="~/images/menu/menu-item-5.png" class="card-img-top" alt="Menu item 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Beef Mushroom stir Fry</h5>
+                        <p class="card-text text-muted">The meal consists of seared or cooked beef strips soy sauce</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">260 ₹</span>
+                        <a class="btn btn-sm btn-outline-dark" asp-area="" asp-controller="Order" asp-action="Create">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="~/images/menu/menu-item-6.png" class="card-img-top" alt="Menu item 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Buddha bowl</h5>
+                        <p class="card-text text-muted">Contains a variety of fresh ingredients, carrots, cucumber sticks, vegetables.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">140 ₹</span>
+                        <a class="btn btn-sm btn-outline-dark" asp-area="" asp-controller="Order" asp-action="Create">Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chefs -->
+    <section class="py-5">
+        <h2 class="mb-4 text-center">Our Chefs</h2>
+        <div class="row g-4">
+            <div class="col-md-4 text-center">
+                <img src="~/images/chefs/chefs-1.jpg" class="img-fluid mb-3 rounded-circle " alt="Chef 1" style="width:140px;height:140px;object-fit:cover;">
+                <h5>Anuj Sahu</h5>
+                <p class="text-muted">Master Chef</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="~/images/chefs/chefs-2.jpg" class="img-fluid mb-3 rounded-circle " alt="Chef 2" style="width:140px;height:140px;object-fit:cover;">
+                <h5>Dinesh Thakur</h5>
+                <p class="text-muted">Patissier</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="~/images/chefs/chefs-3.jpg" class="img-fluid mb-3 rounded-circle " alt="Chef 3" style="width:140px;height:140px;object-fit:cover;">
+                <h5>Ankit Raj</h5>
+                <p class="text-muted">Cook</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation CTA -->
+    <section class="text-center w-auto">
+        <div class="p-4 rounded-3 bg-secondary bg-opacity-50">
+            <h3 class="mb-3">Reserve Your Table</h3>
+            <p class="text-muted mb-3">Call us or book online for a guaranteed spot.</p>
+            <a class="btn btn-outline-dark btn-lg" asp-area="" asp-controller="Home" asp-action="Contact">Contact & Reservation</a>
+        </div>
+    </section>
+</div>

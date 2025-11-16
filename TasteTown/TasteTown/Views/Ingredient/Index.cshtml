@@ -1,0 +1,32 @@
+﻿@using TasteTown.Models
+@model IEnumerable<Ingredient>
+
+    @{
+        ViewBag.Title = "List of Restaurant Ingredients";
+    }
+
+<h1 class="mb-4">Ingredients</h1>
+
+<a asp-action="Create" class="btn btn-primary mb-3">Create New Ingredient</a>
+
+<table class="table table-striped table-hover table-bordered align-middle">
+    <thead class="table-dark">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th class="text-end">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Ingredient i in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => i.Name)</td>
+                <td class="text-end">
+                    <a asp-action="Details" asp-route-id="@i.IngredientId" class="btn btn-info btn-sm me-2">Show Item</a>
+                    <a asp-action="Edit" asp-route-id="@i.IngredientId" class="btn btn-warning btn-sm me-2">Rename</a>
+                    <a asp-action="Delete" asp-route-id="@i.IngredientId" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
